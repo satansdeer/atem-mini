@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile majorVersion="1" minorVersion="5" product="ATEM Mini Pro ISO">
+    <Settings abDirect="False" cameraAux="-1">
+        <MultiViewVideoModes>
+            <MultiViewVideoMode coreVideoMode="1080p2398" multiViewVideoMode="1080p2398"/>
+            <MultiViewVideoMode coreVideoMode="1080p24" multiViewVideoMode="1080p24"/>
+            <MultiViewVideoMode coreVideoMode="1080p25" multiViewVideoMode="1080p25"/>
+            <MultiViewVideoMode coreVideoMode="1080p2997" multiViewVideoMode="1080p2997"/>
+            <MultiViewVideoMode coreVideoMode="1080p30" multiViewVideoMode="1080p30"/>
+            <MultiViewVideoMode coreVideoMode="1080p50" multiViewVideoMode="1080p50"/>
+            <MultiViewVideoMode coreVideoMode="1080p5994" multiViewVideoMode="1080p5994"/>
+            <MultiViewVideoMode coreVideoMode="1080p60" multiViewVideoMode="1080p60"/>
+        </MultiViewVideoModes>
+        <Inputs>
+            <Input id="1" shortName="CAM1" longName="Camera 1" externalPortType="HDMI"/>
+            <Input id="2" shortName="CAM2" longName="Camera 2" externalPortType="HDMI"/>
+            <Input id="3" shortName="CAM3" longName="Camera 3" externalPortType="HDMI"/>
+            <Input id="4" shortName="CAM4" longName="Camera 4" externalPortType="HDMI"/>
+        </Inputs>
+        <MultiViews>
+            <MultiView index="0" layout="ProgramTop" LayoutID="12" vuMeterOpacity="1" programPreviewSwapped="False">
+                <Windows>
+                    <Window index="0" input="10011" vuMeterEnabled="False" safeAreaEnabled="True"/>
+                    <Window index="1" input="10010" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                    <Window index="2" input="1" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                    <Window index="3" input="2" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                    <Window index="4" input="3" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                    <Window index="5" input="4" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                    <Window index="6" input="3010" vuMeterEnabled="False" safeAreaEnabled="False"/>
+                </Windows>
+            </MultiView>
+        </MultiViews>
+        <ButtonMapping>
+            <Button index="0" externalInputIndex="0" mappedToCamera="True"/>
+            <Button index="1" externalInputIndex="1" mappedToCamera="True"/>
+            <Button index="2" externalInputIndex="2" mappedToCamera="True"/>
+            <Button index="3" externalInputIndex="3" mappedToCamera="True"/>
+            <Button index="4" externalInputIndex="4" mappedToCamera="True"/>
+            <Button index="5" externalInputIndex="5" mappedToCamera="True"/>
+            <Button index="6" externalInputIndex="6" mappedToCamera="True"/>
+            <Button index="7" externalInputIndex="7" mappedToCamera="True"/>
+            <Button index="8" externalInputIndex="8" mappedToCamera="True"/>
+            <Button index="9" externalInputIndex="9" mappedToCamera="True"/>
+        </ButtonMapping>
+        <UpstreamKeys sizeLink="True"/>
+    </Settings>
+    <FairlightAudioMixer masterOutFaderGain="0" followFadeToBlack="False" audioFollowVideoCrossfadeTransition="False">
+        <MasterOutEqualizer enabled="True" gain="0">
+            <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+            <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+            <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+            <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+            <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+            <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+        </MasterOutEqualizer>
+        <MasterOutDynamicsProcessor makeupGain="0">
+            <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+            <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+        </MasterOutDynamicsProcessor>
+        <AudioInputs>
+            <AudioInput configuration="Stereo" id="1">
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="Off">
+                    <Equalizer enabled="True" gain="0">
+                        <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+            <AudioInput configuration="Stereo" id="2">
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="Off">
+                    <Equalizer enabled="True" gain="0">
+                        <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+            <AudioInput configuration="Stereo" id="3">
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="Off">
+                    <Equalizer enabled="True" gain="0">
+                        <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+            <AudioInput configuration="Stereo" id="4">
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="Off">
+                    <Equalizer enabled="True" gain="0">
+                        <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+            <AudioInput configuration="Stereo" id="1301">
+                <Analog level="ConsumerLine"/>
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="On" delayFrames="3">
+                    <Equalizer enabled="False" gain="0">
+                        <EqualizerBand index="0" enabled="True" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="True" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+            <AudioInput configuration="Stereo" id="1302">
+                <Analog level="Microphone"/>
+                <AudioSource id="-65280" inputGain="0" pan="0" faderGain="0" mixOption="Off" delayFrames="0">
+                    <Equalizer enabled="True" gain="0">
+                        <EqualizerBand index="0" enabled="False" shape="HighPass" frequencyRange="Low" frequency="46" gain="0" qFactor="0.71"/>
+                        <EqualizerBand index="1" enabled="True" shape="LowShelf" frequencyRange="Low" frequency="49" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="2" enabled="True" shape="BandPass" frequencyRange="MidLow" frequency="171" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="3" enabled="True" shape="BandPass" frequencyRange="MidHigh" frequency="798" gain="0" qFactor="2.3"/>
+                        <EqualizerBand index="4" enabled="True" shape="HighShelf" frequencyRange="High" frequency="7260" gain="0" qFactor="0.8"/>
+                        <EqualizerBand index="5" enabled="False" shape="LowPass" frequencyRange="High" frequency="12900" gain="0" qFactor="0.71"/>
+                    </Equalizer>
+                    <DynamicsProcessor makeupGain="0">
+                        <Expander enabled="False" gateMode="False" threshold="-45" range="18" ratio="1.1" attack="1.4" hold="0" release="93"/>
+                        <Compressor enabled="False" threshold="-35" ratio="2" attack="1.4" hold="0" release="93"/>
+                        <Limiter enabled="False" threshold="-12" attack="0.71" hold="0" release="93"/>
+                    </DynamicsProcessor>
+                </AudioSource>
+            </AudioInput>
+        </AudioInputs>
+    </FairlightAudioMixer>
+</Profile>
